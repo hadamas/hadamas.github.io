@@ -1,3 +1,5 @@
+import { Howl } from 'howler';
+
 const template = document.createElement('template');
 template.innerHTML = `
   <style>
@@ -65,8 +67,16 @@ class Header extends HTMLElement {
 
     this.isMuted = false;
     this.isDark = false;
+
+    this.themeSound = new Howl({
+      src: [new URL('../../assets/sounds/minecraft-btn.wav', import.meta.url).href],
+      volume: 0.5,
+      preload: true
+    });
+
+
     
-    this.logo.src = new URL('../../assets/images/logo.png', import.meta.url).href;
+    this.logo.src = new URL('../../assets/images/logo-light.png', import.meta.url).href;
     this.themeIcon.src = new URL('../../assets/images/light-mode.svg', import.meta.url).href;
     this.audioIcon.src = new URL('../../assets/images/volume-on-dark.svg', import.meta.url).href;
     
@@ -85,6 +95,13 @@ class Header extends HTMLElement {
       `../../assets/images/volume-${this.isMuted ? 'off' : 'on'}-${this.isDark ? 'light' : 'dark'}.svg`,
       import.meta.url
     ).href;
+    this.logo.src = new URL(
+      `../../assets/images/logo-${this.isDark ? 'dark' : 'light'}.svg`,
+      import.meta.url
+    ).href;
+    if (!this.isMuted) {
+      this.themeSound.play();
+    }
   };
 
   toggleAudio = () => {
@@ -93,6 +110,7 @@ class Header extends HTMLElement {
       `../../assets/images/volume-${this.isMuted ? 'off' : 'on'}-${this.isDark ? 'light' : 'dark'}.svg`,
       import.meta.url
     ).href;
+    this.themeSound.mute(this.isMuted);
   };
 }
 
