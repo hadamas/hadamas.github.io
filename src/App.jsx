@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
-import MainContent from "./components/Main/MainContent";
+import MainContent from "./components/MainContent/MainContent";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -13,7 +13,7 @@ function App() {
   return (
     <body
       style={{
-        backgroundColor: isDarkTheme ? "#132135" : "white",
+        backgroundColor: isDarkTheme ? "black" : "white",
         minHeight: "100vh",
       }}
     >
@@ -23,7 +23,7 @@ function App() {
         isSoundOn={isSoundOn}
         toggleSound={toggleSound}
       />
-      <MainContent></MainContent>
+      <MainContent isDarkTheme={isDarkTheme}></MainContent>
     </body>
   );
 }

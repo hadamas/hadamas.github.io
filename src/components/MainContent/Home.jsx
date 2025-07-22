@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div>
-      <h1>Hi! I'm Alanis Hadama</h1>
+      <h1>hi! <span id="myName">i'm Alanis</span></h1>
     </div>
   );
 }

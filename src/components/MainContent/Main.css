@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-weight: normal;
 }
 
 Main {
@@ -17,7 +18,40 @@ Main {
     position: relative; 
     border-radius: 50px;
     background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    box-shadow: 20px 20px 60px #bebebeff, -20px -20px 60px #bebebeff ;
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.light-theme #myName {
+  color: #6988f4;
+  font-weight: bold;
+}
+
+/* Dark Theme----------- */
+
+.dark-theme {
+  background-color: #292929;
+  color: white;
+  box-shadow: 20px 20px 60px #000000ff, -20px -20px 60px #000000ff;
+}
+
+.dark-theme #myName {
+  color: #6988f4;
+  font-weight: bold;
+}
+
+.dark-theme #buttonRow {
+  background-color: #1d1d1d;
+  box-shadow: 20px 80px 100px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .custom-button {
+  background-color: #2d2d2d;
+  box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* Main Buttons ---------------------------------------------*/
@@ -29,9 +63,9 @@ Main {
   bottom: 10px;
   gap: 8px;
   padding: 8px;
-  background-color: #e8e4df;
+  background-color: #e9e4deff;
   border-radius: 9999px; /* rounded-full */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
@@ -46,8 +80,9 @@ Main {
   padding: 8px 12px;
   margin: 0;
   cursor: pointer;
-  background-color: #bfbfbf;
+  background-color: #e9e4deff;
   border-radius: 9999px; /* rounded-full */
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
@@ -63,9 +98,9 @@ Main {
   height: 16px;
   font-size: 0.6rem;
   padding: 2px 4px;
-  background-color: black;
+  background-color: #6988f4;
   color: white;
-  opacity: 0.5;
+  opacity: 0.7;
   position: absolute;
   top: -28px;
   border-radius: 6px;

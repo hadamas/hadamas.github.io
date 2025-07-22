@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
