@@ -35,21 +35,22 @@ function MainContent() {
 
   return (
     <main>
-      {renderSection()}
-      
-      <div className="button-row">
-        {buttonData.map(({ id, src, label }) => (
-          <button
-            key={id}
-            className="custom-button"
-            onClick={() => setActiveSection(id)}
-            data-label={label}
-          >
-            <img src={src} alt={id.toLowerCase()} />
-          </button>
-      ))}
-    </div>
-
+      <div class="canvas">
+        {renderSection()}
+        
+        <div className="button-row">
+          {buttonData.map(({ id, src, label }) => (
+            <button
+              key={id}
+              className="custom-button"
+              onClick={() => setActiveSection(id)}
+              data-label={label}
+            >
+              <img src={src} alt={id.toLowerCase()} />
+            </button>
+          ))}
+        </div>
+      </div>
     </main>
   );
 }

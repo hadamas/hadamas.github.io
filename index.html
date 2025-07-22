@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src\styles\index.css" />
     <title>Alanis Portfolio</title>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "ogl": "https://unpkg.com/ogl@latest/dist/ogl.js"
+        }
+      }
+    </script>
   </head>
+
   <body>
+    <canvas id="aurora-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="./src/styles/background/aurora.js"></script>
   </body>
 </html>

@@ -2,7 +2,11 @@
     margin: 0;
 }
 
-main {
+Main {
+    width: 100%;
+}
+
+.canvas {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
