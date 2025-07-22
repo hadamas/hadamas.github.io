@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 900px;
+    position: relative; 
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+/* Main Buttons ---------------------------------------------*/
+.button-row {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  position: absolute;
+  bottom: 10px;
+  gap: 8px;
+  padding: 8px;
+  background-color: #e8e4df;
+  border-radius: 9999px; /* rounded-full */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button-row:hover {
+  transform: scaleX(1.05);
+}
+
+.custom-button {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  margin: 0;
+  cursor: pointer;
+  background-color: #bfbfbf;
+  border-radius: 9999px; /* rounded-full */
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  transform: translateY(-20px) scale(1.25);
+}
+
+.custom-button::before {
+  content: attr(data-label);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  font-size: 0.6rem;
+  padding: 2px 4px;
+  background-color: black;
+  color: white;
+  opacity: 0.5;
+  position: absolute;
+  top: -28px;
+  border-radius: 6px;
+}
+
+.custom-button:hover::before {
+  display: flex;
+}
+
+.custom-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.dark .button-row {
+  background-color: #191818;
+}
+
+.dark .custom-button {
+  background-color: #191818;
+}
+
+.dark .custom-button::before {
+  background-color: white;
+  color: black;
+}
+
+/* ------------------------------ */

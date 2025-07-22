@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css'
 import Header from './components/Header/Header';
+import MainContent from './components/Main/MainContent';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <body style={{ backgroundColor: isDarkTheme ? '#132135' : 'white', minHeight: '100vh' }}>
       <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} isSoundOn={isSoundOn} toggleSound={toggleSound}/>
+      <MainContent></MainContent>
     </body>
      
   )
