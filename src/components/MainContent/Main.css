@@ -70,6 +70,19 @@ Main {
   box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+.dark-theme .custom-button {
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3), inset 4px 4px 12px #000000ff, inset -4px -4px 12px #3d3d3dff;
+  transition: all 0.3s ease;
+}
+
+.dark-theme .custom-button:hover {
+  color: #666;
+  box-shadow: 0px 0px 0px #000000ff, 0px 0px 0px #181818ff,
+    inset 4px 4px 12px #000000ff, inset -4px -4px 12px #252525ff;
+  transform: scaleX(1.04);
+  transition: all 0.2s ease;
+}
+
 /* Main Buttons ---------------------------------------------*/
 .button-row {
   display: flex;
@@ -80,7 +93,7 @@ Main {
   gap: 8px;
   padding: 8px;
   margin-bottom: 15px;
-  background-color: #e9e4deff;
+  background-color: #dbd7d2ff;
   border-radius: 9999px;
   box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2), inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
   transition: all 0.3s ease;
@@ -95,14 +108,14 @@ Main {
   cursor: pointer;
   background-color: #ccc6c0ff;
   border-radius: 9999px;
-  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3), inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3), inset 4px 4px 12px #bbb9b9ff, inset -4px -4px 12px #f1f1f1ff;
   transition: all 0.3s ease;
 }
 
 .custom-button:hover {
   color: #666;
-  box-shadow: 0px 0px 0px #c5c5c5, 0px 0px 0px #ffffff,
-    inset 4px 4px 12px #afaaa5ff, inset -4px -4px 12px #ffffff;
+  box-shadow: 0px 0px 0px #b8b6b6ff, 0px 0px 0px #fffefeff,
+    inset 4px 4px 12px #b8b6b6ff, inset -4px -4px 12px #f1f1f1ff;
   transform: scaleX(1.04);
   transition: all 0.2s ease;
 }
