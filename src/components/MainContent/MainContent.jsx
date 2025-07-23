@@ -13,11 +13,11 @@ import education from "../../assets/images/education.png";
 import links from "../../assets/images/links.png";
 
 const buttonData = [
-  { id: "About", src: about, label: "about" },
-  { id: "Work", src: work, label: "work" },
+  { id: "About", src: about, label: "sobre" },
+  { id: "Work", src: work, label: "trabalho" },
   { id: "Home", src: home, label: "home" },
-  { id: "Education", src: education, label: "education" },
-  { id: "Links", src: links, label: "contact" },
+  { id: "Education", src: education, label: "educação" },
+  { id: "Links", src: links, label: "links" },
 ];
 
 function MainContent({ isDarkTheme }) {
