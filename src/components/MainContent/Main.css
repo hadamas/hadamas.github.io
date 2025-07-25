@@ -1,6 +1,9 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 * {
   margin: 0;
   font-weight: normal;
+  font-size: 14px;
 }
 
 Main {
@@ -11,7 +14,7 @@ Main {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 0 70px;
+  padding: 50px 90px 0 90px;
 }
 
 .page-section h2 {
@@ -51,7 +54,7 @@ Main {
 
 .dark-theme {
   background-color: #292929;
-  color: gray;
+  color: #ffffffff;
   box-shadow: 20px 20px 60px #000000ff, -20px -20px 60px #000000ff;
 }
 
@@ -193,15 +196,22 @@ Main {
 }
 
 .small-message-links {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   font-size: 0.8em;
   color: #383838ff;
   text-align: center;
   margin-top: 10px;
 }
 
+#email {
+  padding: 15px;
+}
+
 /* Estilos para o modo escuro */
 .dark-theme .button-links a {
-  color: #fff;
+  color: #d1d1d1ff;
   background: #212121;
   border: 1px solid #212121;
   box-shadow: 6px 6px 12px #000, -6px -6px 12px #2f2f2f;
@@ -212,6 +222,7 @@ Main {
   box-shadow: 0px 0px 0px #000000ff, 0px 0px 0px #2c2b2bff,
     inset 4px 4px 12px #000000ff, inset -4px -4px 12px #292727ff;
 }
-.dark-theme .small-message-links {
-  color: #eaeaea;
+
+.dark-theme .small-message-links{
+  color: #e9e8e8d5;
 }

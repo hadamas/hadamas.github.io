@@ -1,8 +1,4 @@
 import "./Main.css";
-import linkedin from "bootstrap-icons/icons/linkedin.svg";
-import github from "bootstrap-icons/icons/github.svg";
-import instagram from "bootstrap-icons/icons/instagram.svg";
-import tiktok from "bootstrap-icons/icons/tiktok.svg";
 
 function Links() {
   const urls = {
@@ -12,11 +8,12 @@ function Links() {
     tiktok: "https://www.tiktok.com/@alanishadama",
   };
 
-  const Button = ({ text, href, icon }) => {
+  const Button = ({ text, href, iconClass, color }) => {
     return (
       <div className="button-links">
         <a href={href} target="_blank" rel="noopener noreferrer">
-          <img src={icon} alt={`${text} icon`} className="button-icon-links" />
+          <i className={`bi ${iconClass}`} style={{ color: color, fontSize: '20px' }} />
+          {text}
         </a>
       </div>
     );
@@ -26,15 +23,41 @@ function Links() {
     <div className="page-section">
       <h2>contato</h2>
       <div className="icon-grid-links">
-        <Button text="linkedin" icon={linkedin} href={urls.linkedin} />
-        <Button text="gitHub" icon={github} href={urls.github} />
-        <Button text="instagram" icon={instagram} href={urls.instagram} />
-        <Button text="tiktok" icon={tiktok} href={urls.tiktok} />
+        <Button
+          text="linkedin"
+          iconClass="bi-linkedin"
+          href={urls.linkedin}
+          color="#0077B5"
+        />
+        <Button
+          text="github"
+          iconClass="bi-github"
+          href={urls.github}
+          color="#89838fff"
+        />
+        <Button
+          text="instagram"
+          iconClass="bi-instagram"
+          href={urls.instagram}
+          color="#E1306C"
+        />
+        <Button
+          text="tiktok"
+          iconClass="bi-tiktok"
+          href={urls.tiktok}
+          color="#884bb1ff"
+        />
       </div>
-      <p className="small-message-links">
+      <div className="small-message-links">
+        <p>
         Vamos conversar! <br />
-        Fique à vontade para entrar em contato para colaborações, projetos ou trocar ideia :)
+        Curte trocar ideia sobre tech, projetos criativos ou só bater um papo
+        geek? <br />
+        É só chamar, tô sempre online por aqui ☕💻 <br />
       </p>
+      <span id="email">alanis.hadama@gmail.com </span>
+      </div>
+      
     </div>
   );
 }
