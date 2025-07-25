@@ -38,7 +38,7 @@ Main {
 }
 
 .light-theme {
-  background-color: white;
+  background-color: #eeededff;;
   color: black;
 }
 
@@ -61,26 +61,24 @@ Main {
 }
 
 .dark-theme #buttonRow {
-  background-color: #1d1d1d;
-  box-shadow: 20px 80px 100px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background: #212121;
+  border: 1px solid #212121;
+  box-shadow: 6px 6px 12px #000, -6px -6px 12px #2f2f2f;
 }
 
 .dark-theme .custom-button {
-  background-color: #2d2d2d;
-  box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.dark-theme .custom-button {
-  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3), inset 4px 4px 12px #000000ff, inset -4px -4px 12px #3d3d3dff;
+  color: #fff;
+  background: #212121;
+  border: 1px solid #212121;
+  box-shadow: 6px 6px 12px #000, -6px -6px 12px #2f2f2f;
   transition: all 0.3s ease;
 }
 
 .dark-theme .custom-button:hover {
   color: #666;
-  box-shadow: 0px 0px 0px #000000ff, 0px 0px 0px #181818ff,
-    inset 4px 4px 12px #000000ff, inset -4px -4px 12px #252525ff;
-  transform: scaleX(1.04);
-  transition: all 0.2s ease;
+  box-shadow: 0px 0px 0px #000000ff, 0px 0px 0px #2c2b2bff,
+    inset 4px 4px 12px #000000ff, inset -4px -4px 12px #292727ff;
 }
 
 /* Main Buttons ---------------------------------------------*/
@@ -93,10 +91,11 @@ Main {
   gap: 8px;
   padding: 8px;
   margin-bottom: 15px;
-  background-color: #dbd7d2ff;
+  background-color: #e8e8e8;
   border-radius: 9999px;
-  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2), inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
-  transition: all 0.3s ease;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
 }
 
 .custom-button {
@@ -106,16 +105,17 @@ Main {
   padding: 8px 12px;
   margin: 0;
   cursor: pointer;
-  background-color: #ccc6c0ff;
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
   border-radius: 9999px;
-  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3), inset 4px 4px 12px #bbb9b9ff, inset -4px -4px 12px #f1f1f1ff;
-  transition: all 0.3s ease;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  transition: all 0.3s;
 }
 
 .custom-button:hover {
   color: #666;
-  box-shadow: 0px 0px 0px #b8b6b6ff, 0px 0px 0px #fffefeff,
-    inset 4px 4px 12px #b8b6b6ff, inset -4px -4px 12px #f1f1f1ff;
+  box-shadow: 0px 0px 0px #c5c5c5, 0px 0px 0px #ffffff,
+    inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
   transform: scaleX(1.04);
   transition: all 0.2s ease;
 }
@@ -143,19 +143,6 @@ Main {
 .custom-button img {
   width: 24px;
   height: 24px;
-}
-
-.dark .button-row {
-  background-color: #191818;
-}
-
-.dark .custom-button {
-  background-color: #191818;
-}
-
-.dark .custom-button::before {
-  background-color: white;
-  color: black;
 }
 
 /* LINKS PAGE ------------------------------ */
@@ -220,9 +207,10 @@ Main {
   box-shadow: 6px 6px 12px #000, -6px -6px 12px #2f2f2f;
 }
 
-.dark-theme .button-links a:active {
+.dark-theme .button-links a:hover {
   color: #666;
-  box-shadow: inset 4px 4px 12px #000, inset -4px -4px 12px #1f1f1f;
+  box-shadow: 0px 0px 0px #000000ff, 0px 0px 0px #2c2b2bff,
+    inset 4px 4px 12px #000000ff, inset -4px -4px 12px #292727ff;
 }
 .dark-theme .small-message-links {
   color: #eaeaea;
