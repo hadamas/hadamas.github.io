@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./Links.css";
 
 function Links() {
   const urls = {

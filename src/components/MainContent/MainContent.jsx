@@ -1,10 +1,10 @@
 import "./Main.css";
 import { useState } from "react";
-import About from "./About";
-import Work from "./Work";
-import Home from "./Home";
-import Education from "./Education";
-import Links from "./Links";
+import About from "./About/About";
+import Work from "./Work/Work";
+import Home from "./Home/Home";
+import Education from "./Education/Education";
+import Links from "./Links/Links";
 
 import about from "../../assets/images/about.png";
 import work from "../../assets/images/work.png";
