@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Mona Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   margin: 0;

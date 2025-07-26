@@ -20,7 +20,7 @@ function Links() {
   };
 
   return (
-    <div className="page-section">
+    <div className="page-section" id="links-section">
       <h2>contato</h2>
       <div className="icon-grid-links">
         <Button

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+
+.about-section {
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  gap: 20px;
+}
+
+.header-img img {
+  min-width: 10rem;
+  min-height: 10rem;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.text-header {
+  display: flex;
+  flex-direction: column;
+  max-height: 10rem;
+}
+
+.text-header-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.text-header-name h1 {
+  font-size: clamp(1em, 2vw, 1.5em);
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 800;
+  color: #5871ccff;
+}
+
+.text-header-name span {
+  font-size: clamp(0.8em, 1.5vw, 1.2em);
+  margin-left: 5px;
+  white-space: nowrap;
+  color: #ec7f58;
+  font-weight: bold;
+  font-family: "Yomogi", sans-serif;
+}
+
+.text-header-info {
+  display: flex-box;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.text-header-info img {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 5px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-header-info a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 40px 0 10px;
+}
+
+.scrollable-content {
+  overflow-y: auto;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.scrollable-content > div {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.interests h3,
+.language h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #17967f;
+}
+
+.intro ul,
+.interests ul,
+.language ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.interests li,
+.language li {
+  margin-bottom: 5px;
+}
+
+.language span {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.language img {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 5px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+/* DARK MODE */
+
+.dark-theme .text-header-name h1 {
+    color: #ff70c0;
+}
+
+.dark-theme .text-header-name span {
+  color: #ede96e
+}
+
+.dark-theme .text-header-info a {
+    color: #6988f4;
+    font-weight: bold;
+}
+
+.dark-theme .interests h3,
+.dark-theme .language h3 {
+  color: #5fccb7;
+}
+
+.dark-theme .interests li,
+.dark-theme .language li,
+.dark-theme .language span {
+  color: #eaeaea;
+}

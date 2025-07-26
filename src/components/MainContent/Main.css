@@ -2,8 +2,8 @@
 
 * {
   margin: 0;
-  font-weight: normal;
   font-size: 14px;
+  scrollbar-width: thin;
 }
 
 Main {
@@ -22,12 +22,15 @@ Main {
   border-radius: 50px;
   background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebeff, -20px -20px 60px #bebebeff;
+  padding: 30px 0 125px 0;
+  scrollbar-color: #d45ba0ff #eeeded;
 }
 
 .page-section {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  max-width: 100%;
   padding: 50px 90px 0 90px;
 }
 
@@ -56,6 +59,7 @@ Main {
   background-color: #292929;
   color: #ffffffff;
   box-shadow: 20px 20px 60px #000000ff, -20px -20px 60px #000000ff;
+  scrollbar-color: #ec7f58 #292929;
 }
 
 .dark-theme #myName {
