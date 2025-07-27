@@ -6,11 +6,11 @@ import Home from "./Home/Home";
 import Education from "./Education/Education";
 import Links from "./Links/Links";
 
-import about from "../../assets/images/about.png";
-import work from "../../assets/images/work.png";
-import home from "../../assets/images/home.png";
-import education from "../../assets/images/education.png";
-import links from "../../assets/images/links.png";
+import about from "/assets/images/about.png";
+import work from "/assets/images/work.png";
+import home from "/assets/images/home.png";
+import education from "/assets/images/education.png";
+import links from "/assets/images/links.png";
 
 const buttonData = [
   { id: "About", src: about, label: "sobre" },
