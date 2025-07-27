@@ -2,13 +2,13 @@ import "./About.css";
 
 function About() {
   const emoji = {
-    br: "../../../src/assets/images/br.png",
-    usa: "../../../src/assets/images/usa.png",
-    fr: "../../../src/assets/images/fr.png",
-    jp: "../../../src/assets/images/jp.png",
-    pin: "../../../src/assets/images/pin.png",
-    study: "../../../src/assets/images/education.png",
-    work: "../../../src/assets/images/work-tech.png",
+    br: "./src/assets/images/br.png",
+    usa: "./src/assets/images/usa.png",
+    fr: "./src/assets/images/fr.png",
+    jp: "./src/assets/images/jp.png",
+    pin: "./src/assets/images/pin.png",
+    study: "./src/assets/images/education.png",
+    work: "./src/assets/images/work-tech.png",
   };
   return (
     <div className="page-section">
@@ -17,7 +17,7 @@ function About() {
         <div className="about-header">
           <div className="header-img">
             <img
-              src="../../../src/assets/images/profile-pic.png"
+              src="./src/assets/images/profile-pic.png"
               alt="profile-pic"
             />
           </div>
