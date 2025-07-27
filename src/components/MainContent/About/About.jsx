@@ -37,7 +37,7 @@ function About() {
               </span>
               <span className="infos">
                 <img src={emoji.work} alt="flag-BR" />
-                estagiária em desenvolvimento na&nbsp;
+                Estagiária em desenvolvimento na&nbsp;
                 <a href="https://www2.petros.com.br/" target="_blank">
                   Petros
                 </a>

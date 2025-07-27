@@ -48,11 +48,6 @@ Main {
   color: black;
 }
 
-.light-theme #myName {
-  color: #6988f4;
-  font-weight: bold;
-}
-
 /* ----------- DARK MODE PAGE -----------*/
 
 .dark-theme {
@@ -60,11 +55,6 @@ Main {
   color: #ffffffff;
   box-shadow: 20px 20px 60px #000000ff, -20px -20px 60px #000000ff;
   scrollbar-color: #ec7f58 #292929;
-}
-
-.dark-theme #myName {
-  color: #6988f4;
-  font-weight: bold;
 }
 
 .dark-theme #buttonRow {

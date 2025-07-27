@@ -27,7 +27,7 @@ function Header({ isDarkTheme, toggleTheme, isSoundOn, toggleSound }) {
       </div>
 
       <div class="buttons">
-        <button
+        <button className="header-button"
           onClick={() => {
             toggleTheme();
             playSound();
@@ -35,7 +35,7 @@ function Header({ isDarkTheme, toggleTheme, isSoundOn, toggleSound }) {
         >
           <img src={isDarkTheme ? moon : sun} alt="Theme Icon" />
         </button>
-        <button
+        <button className="header-button"
           onClick={() => {
             toggleSound();
             muteSound();
