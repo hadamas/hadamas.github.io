@@ -1,11 +1,11 @@
 import "./Header.css";
 import { Howl } from "howler";
 
-import flower from "../../assets/images/flower.png";
-import sun from "../../assets/images/sun.png";
-import moon from "../../assets/images/moon.png";
-import soundOn from "../../assets/images/soundOn.png";
-import soundOff from "../../assets/images/soundOff.png";
+import flower from "/assets/images/flower.png";
+import sun from "/assets/images/sun.png";
+import moon from "/assets/images/moon.png";
+import soundOn from "/assets/images/soundOn.png";
+import soundOff from "/assets/images/soundOff.png";
 
 import click from "../../assets/sounds/btn-minecraft.wav";
 
