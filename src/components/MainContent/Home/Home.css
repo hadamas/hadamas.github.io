@@ -4,21 +4,27 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .home-section h1 {
-  margin-top: 60px;
-  font-size: 40px;
+  margin-top: clamp(1.5rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-align: center;
 }
 
 .home-section span {
-  font-size: 40px;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
+
 .home-section p {
   align-self: center;
-  font-size: 14px;
-  margin-bottom: 1.7rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  margin-bottom: clamp(1rem, 3vw, 1.7rem);
   color: #ec7f58;
+  text-align: center;
+  width: 100%;
+  white-space: normal;
 }
 
 #myName {
@@ -31,7 +37,7 @@
 
 .resume-button {
   color: #090909;
-  padding: 0.7em 1.7em;
+  padding: clamp(0.5rem, 2vw, 0.7rem) clamp(1.2rem, 3vw, 1.7rem);
   border-radius: 0.5em;
   background: #e8e8e8;
   cursor: pointer;
@@ -50,7 +56,7 @@
 .resume-button a {
   color: #090909;
   padding-right: 0.5rem;
-  font-size: 14px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   text-decoration: none;
 }
 
@@ -82,4 +88,51 @@
 
 .dark-theme .resume-button a {
   color: #e9e8e8d5;
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media (max-width: 1024px) {
+  .home-section h1 {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+  }
+
+  .home-section span {
+    font-size: clamp(1.3rem, 4vw, 2rem);
+  }
+
+  .home-section p {
+    font-size: clamp(0.8rem, 1.8vw, 1.1rem);
+    margin-bottom: clamp(0.8rem, 2.5vw, 2rem);
+  }
+
+  .resume-button {
+    padding: clamp(0.4rem, 1.8vw, 0.6rem) clamp(1rem, 2.5vw, 1.5rem);
+  }
+
+  .resume-button a {
+    font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section h1 {
+    font-size: clamp(2rem, 4vw, 2rem);
+  }
+
+  .home-section span {
+    font-size: clamp(2rem, 4vw, 2rem);
+  }
+
+  .home-section p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: clamp(0.7rem, 2vw, 1.2rem);
+  }
+
+  .resume-button {
+    padding: clamp(0.7rem, 1.9vw, 0.8rem) clamp(1.2rem, 3vw, 1.7rem);
+  }
+
+  .resume-button a {
+    font-size: clamp(1rem, 1vw, 1rem);
+  }
 }

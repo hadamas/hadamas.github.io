@@ -16,10 +16,7 @@ function About() {
       <div className="about-section">
         <div className="about-header">
           <div className="header-img">
-            <img
-              src="/assets/images/profile-pic.png"
-              alt="profile-pic"
-            />
+            <img src="/assets/images/profile-pic.png" alt="profile-pic" />
           </div>
           <div className="text-header">
             <div className="text-header-name">

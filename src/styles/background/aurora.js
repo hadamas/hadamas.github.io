@@ -1,4 +1,5 @@
 import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
+import "./Aurora.css";
 
 const VERT = `#version 300 es
 in vec2 position;

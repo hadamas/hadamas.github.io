@@ -2,12 +2,14 @@
 
 * {
   margin: 0;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0rem + 1.5625vw, 1rem);
   scrollbar-width: thin;
 }
 
 Main {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .canvas {
@@ -16,8 +18,10 @@ Main {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  height: 600px;
-  width: 900px;
+  width: 90vw;
+  max-width: 900px;
+  min-height: 600px;
+  margin: 80px 10px 20px;
   position: relative;
   border-radius: 50px;
   background: #e0e0e0;
@@ -31,14 +35,14 @@ Main {
   flex-direction: column;
   box-sizing: border-box;
   max-width: 100%;
-  padding: 50px 90px 0 90px;
+  padding: 50px 10% 0;
 }
 
 .page-section h2 {
   position: absolute;
   top: 30px;
-  left: 50px;
-  font-size: 20px;
+  left: 5%;
+  font-size: clamp(16px, 2vw, 18px);
   font-weight: 700;
   opacity: 0.3;
 }
@@ -48,7 +52,7 @@ Main {
   color: black;
 }
 
-/* ----------- DARK MODE PAGE -----------*/
+/* ----------- DARK MODE PAGE ----------- */
 
 .dark-theme {
   background-color: #292929;
@@ -78,7 +82,7 @@ Main {
     inset 4px 4px 12px #000000ff, inset -4px -4px 12px #292727ff;
 }
 
-/* ----------- MAIN BUTTONS -----------*/
+/* ----------- MAIN BUTTONS ----------- */
 .button-row {
   display: flex;
   justify-content: center;
@@ -140,4 +144,86 @@ Main {
 .custom-button img {
   width: 24px;
   height: 24px;
+}
+
+/* ----------- RESPONSIVE DESIGN ----------- */
+@media (max-width: 1024px) {
+  .canvas {
+    width: 95vw;
+    margin: 70px 10px 15px;
+    min-height: 400px;
+    border-radius: 40px;
+    padding: 20px 0 100px 0;
+  }
+
+  .page-section {
+    padding: 40px 8% 0;
+  }
+
+  .page-section h2 {
+    font-size: clamp(14px, 2vw, 16px);
+    left: 4%;
+  }
+
+  .button-row {
+    gap: 6px;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+
+  .custom-button {
+    padding: 6px 10px;
+  }
+
+  .custom-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-button::before {
+    font-size: 0.5rem;
+    top: -24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .canvas {
+    width: 90vw;
+    margin: 60px 10px 10px;
+    min-height: 500px;
+    border-radius: 30px;
+    padding: 15px 0 80px 0;
+  }
+
+  .page-section {
+    padding: 30px 5% 0;
+  }
+
+  .page-section h2 {
+    font-size: clamp(12px, 2vw, 14px);
+    left: 3%;
+    top: 20px;
+  }
+
+  .button-row {
+    gap: 4px;
+    padding: 4px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+
+  .custom-button {
+    padding: 4px 8px;
+  }
+
+  .custom-button img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .custom-button::before {
+    font-size: 0.4rem;
+    top: -20px;
+    padding: 1px 3px;
+  }
 }
