@@ -2,18 +2,19 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 20px;
+  gap: clamp(0.5rem, 2vw, 1rem);
   margin: 20px 0;
   justify-items: center;
-  max-width: 400px;
+  width: 100%; /* Full width */
+  max-width: clamp(18rem, 90%, 25rem);
   margin-left: auto;
   margin-right: auto;
 }
 
 .button-links a {
   color: #090909;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
+  padding: clamp(0.5rem, 1.8vw, 0.7rem) clamp(1rem, 2.5vw, 1.7rem); /* Responsive padding */
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   border-radius: 0.5em;
   background: #e8e8e8;
   cursor: pointer;
@@ -24,6 +25,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
+  width: 100%;
+  justify-content: center;
 }
 
 .button-links a:hover {
@@ -32,9 +35,8 @@
     inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.button-links a svg {
-  width: 20px;
-  height: 20px;
+.button-links a i {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* Scales between 14.4px and 19.2px */
 }
 
 .button-icon-links {
@@ -73,4 +75,47 @@
 
 .dark-theme .small-message-links{
   color: #e9e8e8d5;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .icon-grid-links {
+    gap: clamp(0.4rem, 1.8vw, 0.8rem);
+    max-width: clamp(16rem, 85%, 22rem);
+  }
+
+  .button-links a {
+    padding: clamp(0.4rem, 1.5vw, 0.6rem) clamp(0.8rem, 2vw, 1.5rem);
+    font-size: clamp(0.85rem, 2.2vw, 1rem);
+  }
+
+  .button-links a i {
+    font-size: clamp(0.85rem, 2.2vw, 1.1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-grid-links {
+    grid-template-rows: repeat(4, auto);
+    gap: clamp(0.3rem, 1.5vw, 0.6rem);
+    max-width: clamp(14rem, 80%, 20rem);
+  }
+
+  .button-links a {
+    padding: clamp(0.6rem, 1.6vw, 0.9rem) clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+  }
+
+  .button-links a i {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  .small-message-links {
+    font-size: clamp(0.9rem, 1.8vw, 1.6rem);
+    padding: clamp(0.1rem, 2vw, 1rem)
+  }
+
+  #email {
+    padding: clamp(0.5rem, 2vw, 1rem);
+  }
 }

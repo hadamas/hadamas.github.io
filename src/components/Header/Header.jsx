@@ -26,7 +26,7 @@ function Header({ isDarkTheme, toggleTheme, isSoundOn, toggleSound }) {
         <img src={flower} alt="Logo" />
       </div>
 
-      <div class="buttons">
+      <div className="buttons">
         <button className="header-button"
           onClick={() => {
             toggleTheme();

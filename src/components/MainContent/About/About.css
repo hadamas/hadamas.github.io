@@ -253,4 +253,8 @@ hr {
   .language h3 {
     font-size: clamp(12px, 1.8vw, 14px);
   }
+
+  .language span {
+    font-size: clamp(0.61rem, 1vw, 1rem);
+  }
 }
