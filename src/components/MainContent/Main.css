@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  font-size: clamp(0.75rem, 0rem + 1.5625vw, 1rem);
+  font-size: clamp(0.8rem, 0rem + 1.5625vw, 1rem);
   scrollbar-width: thin;
 }
 
@@ -108,7 +108,7 @@ Main {
   cursor: pointer;
   background-color: #e8e8e8;
   border: 1px solid #e8e8e8;
-  border-radius: 9999px;
+  border-radius: 20px;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   transition: all 0.3s;
 }
@@ -222,7 +222,7 @@ Main {
   }
 
   .custom-button::before {
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     top: -20px;
     padding: 1px 3px;
   }

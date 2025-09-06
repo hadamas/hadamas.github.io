@@ -13,7 +13,7 @@ function App() {
     <body
       style={{
         backgroundColor: isDarkTheme ? "black" : "white",
-        minHeight: "100vh",
+        minHeight: "100dvh",
       }}
     >
       <Header

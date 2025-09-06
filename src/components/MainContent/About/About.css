@@ -190,7 +190,7 @@ hr {
     align-items: center;
     gap: 0.3rem;
     padding: 0 3%;
-    font-size: clamp(0.625rem, -0.125rem + 1.5625vw, 0.875rem);
+    font-size: clamp(0.8rem, -0.125rem + 1.5625vw, 0.875rem);
   }
 
   .header-img {
@@ -249,12 +249,18 @@ hr {
     padding: 0 5px;
   }
 
+  .intro,
+  .interests,
+  .language {
+    /* font-size: clamp(12px, 1.8vw, 14px);  */
+  }
+
   .interests h3,
   .language h3 {
     font-size: clamp(12px, 1.8vw, 14px);
   }
 
   .language span {
-    font-size: clamp(0.61rem, 1vw, 1rem);
+    font-size: clamp(0.7rem, 1vw, 1rem);
   }
 }
