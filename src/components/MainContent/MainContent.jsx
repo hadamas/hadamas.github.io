@@ -1,22 +1,22 @@
 import "./Main.css";
 import { useState } from "react";
 import About from "./About/About";
-import Work from "./Work/Work";
+import Career from "./Career/Career";
 import Home from "./Home/Home";
-import Education from "./Education/Education";
+import Projects from "./Projects/Projects";
 import Links from "./Links/Links";
 
 import about from "/assets/images/about.png";
-import work from "/assets/images/work.png";
+import career from "/assets/images/work.png";
 import home from "/assets/images/home.png";
-import education from "/assets/images/education.png";
+import projects from "/assets/images/education.png";
 import links from "/assets/images/links.png";
 
 const buttonData = [
   { id: "About", src: about, label: "sobre" },
-  { id: "Work", src: work, label: "trabalho" },
+  { id: "Career", src: career, label: "trabalho" },
   { id: "Home", src: home, label: "home" },
-  { id: "Education", src: education, label: "educação" },
+  { id: "Projects", src: projects, label: "projetos" },
   { id: "Links", src: links, label: "links" },
 ];
 
@@ -27,10 +27,10 @@ function MainContent({ isDarkTheme }) {
     switch (activeSection) {
       case "About":
         return <About />;
-      case "Work":
-        return <Work />;
-      case "Education":
-        return <Education />;
+      case "Career":
+        return <Career />;
+      case "Projects":
+        return <Projects />;
       case "Links":
         return <Links />;
       default:

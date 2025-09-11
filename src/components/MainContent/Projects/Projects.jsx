@@ -1,9 +1,15 @@
-import "./Education.css";
+import "./Projects.css";
 
-function Education() {
+function Projects() {
   return (
     <div className="page-section">
-      <h2>formação acadêmica</h2>
+      <h2>Projetos</h2>
+      <div className="projects">
+        
+      </div>
+      <div className="">
+        
+      </div>
       <p>
         Currently a student, pursuing studies in technology and software
         development. Details of my academic journey will be added as I progress!
@@ -12,4 +18,4 @@ function Education() {
   );
 }
 
-export default Education;
+export default Projects;

@@ -1,4 +1,4 @@
-import "./Work.css";
+import "./Career.css";
 import { useState } from "react";
 
 function Work() {
