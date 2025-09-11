@@ -19,6 +19,7 @@ Main {
   align-items: center;
   justify-content: center;
   width: 90vw;
+  height: 30vw;
   max-width: 900px;
   min-height: 600px;
   margin: 80px 10px 20px;
