@@ -28,7 +28,7 @@ function Work() {
       <h2>experiência profissional</h2>
       <div className="work-section">
         <div className="work-experience">
-          <h3>Expêriencia Profissional</h3>
+          <h3>Trajetória Profissional</h3>
           <ul>
             <li>
               <h6>Estágiaria em desenvolvimento de software</h6>

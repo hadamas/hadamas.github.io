@@ -11,7 +11,8 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  gap: clamp(1.5rem, 2vw, 3rem)
+  gap: clamp(1.5rem, 2vw, 3rem);
+  margin-top: 20px;
 }
 
 .development,
@@ -65,6 +66,10 @@ h3 {
   color: #666;
   box-shadow: 0px 0px 0px #c5c5c5, 0px 0px 0px #ffffff,
     inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.small-msg{
+  margin-top: 20px;
 }
 
 .small-msg a{
