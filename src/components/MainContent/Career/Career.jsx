@@ -1,7 +1,7 @@
 import "./Career.css";
 import { useState } from "react";
 
-function Work() {
+function Career() {
   const [developmentList] = useState([
     "JavaScript",
     "React",
@@ -25,10 +25,11 @@ function Work() {
 
   return (
     <div className="page-section">
-      <h2>experiência profissional</h2>
+      <h2>perfil profissional</h2>
       <div className="work-section">
+
         <div className="work-experience">
-          <h3>Trajetória Profissional</h3>
+          <h3>Experiências</h3>
           <ul>
             <li>
               <h6>Estágiaria em desenvolvimento de software</h6>
@@ -39,6 +40,21 @@ function Work() {
               <h6>Jovem Aprendiz</h6>
               <p>02/2020 - 12/2020 ELETRONUCLEAR S.A.</p>
               <p>Empresa operária e construtora de usinas termonucleares no Brasil.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div className="education">
+          <h3>Formação</h3>
+          <ul>
+            <li>
+              <h6>Bacheraldo em Ciência da Computação</h6>
+              <p>02/2024 - Centro Federal de Educação Tecnológica - CEFET/RJ</p>
+              <p>Cursando</p>
+            </li>
+            <li>
+              <h6>Trilha Desenvolvimento Front-End</h6>
+              <p>2023 - Programa SantanderCoders (ADA)</p>
             </li>
           </ul>
         </div>
@@ -66,11 +82,12 @@ function Work() {
           </div>
         </div>
 
-        <div className="projects"></div>
+        
+        <p className="small-msg">Veja mais no meu <a href="https://github.com/hadamas?tab=repositories" target="_blank">Github</a></p>
       </div>
-      <p className="small-msg">Veja mais no meu <a href="https://github.com/hadamas?tab=repositories" target="_blank">Github</a></p>
+      
     </div>
   );
 }
 
-export default Work;
+export default Career;

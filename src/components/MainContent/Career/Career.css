@@ -1,9 +1,24 @@
+.page-section {
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+.work-section {
+  overflow-y: auto;
+  max-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 30px;
+}
+
 .work-experience,
-.projects {
+.projects,
+.education {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+  margin-bottom: 20px;
 }
 
 .skill-container {
@@ -12,7 +27,6 @@
   justify-content: center;
   width: 100%;
   gap: clamp(1.5rem, 2vw, 3rem);
-  margin-top: 20px;
 }
 
 .development,
@@ -30,16 +44,24 @@ h3 {
   font-size: clamp(1rem, 1.1vw, 1.2rem);
 }
 
+h6 {
+  font-weight: 500;
+}
+
 .work-experience h3 {
   color: #5871ccff;
 }
 
 .development h3 {
-  color: #0077b5;
+  color: #ec7f58;
 }
 
 .tools h3 {
   color: #17967f;
+}
+
+.education h3 {
+  color: #0077b5;
 }
 
 .work-button-itens {
@@ -68,12 +90,8 @@ h3 {
     inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.small-msg{
-  margin-top: 20px;
-}
-
-.small-msg a{
-  color: #ec7f58;
+.small-msg a {
+  color: #6988f4;
   text-decoration: none;
 }
 
@@ -83,12 +101,28 @@ h3 {
     font-size: clamp(0.7rem, 0.8vw, 0.9rem);
     padding: clamp(0.5rem, 1.9vw, 0.9rem) clamp(1.5rem, 3vw, 1.9rem);
   }
+
+  .work-section {
+    padding: 0 10px;
+  }
+
+  .work-experience {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 1024px) {
   .work-button {
     font-size: clamp(0.7rem, 0.8vw, 0.9rem);
     padding: clamp(0.3rem, 1vw, 0.7rem) clamp(1rem, 2vw, 1.4rem);
+  }
+
+  .work-section {
+    padding: 0 10px;
+  }
+
+  h2 {
+    margin-bottom: clamp(0.3rem, 1vw, 0.7rem);
   }
 }
 
