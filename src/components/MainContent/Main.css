@@ -21,7 +21,7 @@ Main {
   width: 90vw;
   height: 35vw;
   min-height: 75vh;
-  max-width: 75vw;
+  max-width: 95vw;
   margin: 15vh 25vw;
   position: relative;
   border-radius: 50px;
@@ -29,6 +29,7 @@ Main {
   box-shadow: 20px 20px 60px #bebebeff, -20px -20px 60px #bebebeff;
   padding: 30px 0 125px 0;
   scrollbar-color: #d45ba0ff #eeeded;
+  margin: 0 auto;
 }
 
 .page-section {
@@ -148,9 +149,20 @@ Main {
 }
 
 /* ----------- RESPONSIVE DESIGN ----------- */
-@media (max-width: 1024px) {
+@media (min-width: 701px) {
   .canvas {
-    width: 95vw;
+    max-width: 60vw;
+  }
+
+  .custom-button img {
+    width: 35px;
+    height: 33px;
+  }
+}
+
+@media (max-width: 700px) {
+  .canvas {
+    max-width: 60vw;
     min-height: 70vh;
     border-radius: 40px;
     padding: 20px 0 100px 0;
@@ -176,8 +188,8 @@ Main {
   }
 
   .custom-button img {
-    width: 30px;
-    height: 28px;
+    width: 35px;
+    height: 35px;
   }
 
   .custom-button::before {
@@ -186,7 +198,7 @@ Main {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 300px) {
   .canvas {
     width: 90vw;
     min-height: 65vh;
