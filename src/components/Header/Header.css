@@ -6,7 +6,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,12 +28,13 @@ header {
     transform: translateY(-5px) scale(1.1);
 }
 
-img {
-    height: 40px;
-    width: 40px;
+header img {
+  width: 5vmin;
+  min-width: 32px;
+  max-width: 80px; 
 }
 
 .buttons {
     display: flex;
-    gap: 40px;
+    gap: 5vmin;
 }

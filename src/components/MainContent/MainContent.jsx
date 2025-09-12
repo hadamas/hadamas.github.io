@@ -14,7 +14,7 @@ import links from "/assets/images/links.png";
 
 const buttonData = [
   { id: "About", src: about, label: "sobre" },
-  { id: "Career", src: career, label: "trabalho" },
+  { id: "Career", src: career, label: "carreira" },
   { id: "Home", src: home, label: "home" },
   { id: "Projects", src: projects, label: "projetos" },
   { id: "Links", src: links, label: "links" },
